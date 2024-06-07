@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-size: large;
+}
+
+#bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: saturate(50%) blur(1px) brightness(60%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 80%;
+    width: 70%;
+    min-width: 300px;
+    min-height: 80%;
+    color: rgb(248, 245, 69);
+    font-family: serif;
+    background-color: hsla(9, 91%, 35%, 0.61);
+    border: 5px double rgb(189, 186, 186);
+}
+
+#title, #description{
+    margin:0;
+    margin-top: 1em;
+    text-align: center;
+}
+
+form{
+    margin: 1em;
+}
+
+fieldset{
+    border: 0;
+    padding: 2rem 0;
+    border-bottom: 2px solid white;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  .inline {
+    display: inline;
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+  #submit{
+    display: block;
+    width: 55%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: gainsboro;
+    border-color: rgb(206, 206, 62);
+    min-width: 300px;
+  }
+
+  option{
+    font-size: large;
+  }
+
+  .red{
+    background-color: rgb(196, 21, 21);
+    color: wheat;
+  }
+
+  .blue{
+    background-color: rgb(22, 216, 216);
+  }
+
+  .green{
+    background-color: rgb(29, 197, 29);
+  }

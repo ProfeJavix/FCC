@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <img src="https://w0.peakpx.com/wallpaper/513/815/HD-wallpaper-pokemon-pokeball-white-pokemon-gray-grey-simple-white-pokeball.jpg"
+        alt="" id="bg">
+    <div class="container">
+        <h1 id="title">Become a Pokemon Trainer</h1>
+        <p id="description">You must complete this form to start your journey:</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Enter your name: <input type="text" id="name" placeholder="Username"
+                        required></label>
+                <label for="email" id="email-label">Enter your Poke-email: <input type="email" id="email"
+                        placeholder="Email" required></label>
+                <label for="number" id="number-label">Enter your age: <input type="number" id="number" min="10"
+                        max="125" placeholder="Age"></label>
+                <label for="dropdown">Choose your initial pokemon:
+                    <select id="dropdown">
+                        <option value="">(select an option)</option>
+                        <option value="1" class="green">Bulbasaur</option>
+                        <option value="2" class="blue">Squirtle</option>
+                        <option value="3" class="red">Charmander</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Select your gender:</legend>
+                <label for="m"><input type="radio" name="gender" id="m" class="inline" value="1" checked> Male</label>
+                <label for="f"><input type="radio" name="gender" id="f" class="inline" value="2"> Female</label>
+            </fieldset>
+            <fieldset>
+                <legend>Select those regions you have visited:</legend>
+                <label for="kanto"><input type="checkbox" id="kanto" value="1" class="inline"> Kanto</label>
+                <label for="johto"><input type="checkbox" id="johto" value="2" class="inline"> Johto</label>
+                <label for="hoenn"><input type="checkbox" id="hoenn" value="3" class="inline"> Hoenn</label>
+                <label for="sinnoh"><input type="checkbox" id="sinnoh" value="4" class="inline"> Sinnoh</label>
+            </fieldset>
+            <label for="goals">Enter your goals as a Pokemon Trainer:
+                <textarea id="goals" cols="30" rows="2" placeholder="I wanna be the very best."></textarea>
+            </label>
+            <input type="submit" value="Gotta catch 'em all!" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
